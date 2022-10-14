@@ -24,8 +24,9 @@
 			</label>
 
 
-			<label id="rslt">Result
-				<input type="text" id="result">
+			<label id="rslt">Result:
+				<!-- <input type="text" id="result"> -->
+				<h1 id="result">RESULT HERE!!</h1>
 			</label>
 
 			<label id="btns">
@@ -93,20 +94,24 @@
 		var oper = document.getElementById("toConvert").value;
 
             if(oper === 'CtoK'){
-                document.getElementById("result").value=CK(field2)+" \u00B0K";
+                var res = document.getElementById("result").value=CK(field2)+" \u00B0K";
+				result.innerHTML = res;
             }
 
             if(oper === 'KtoC'){
-                document.getElementById("result").value=KC(field2)+" \u00B0C";
-            }
+                var res = document.getElementById("result").value=KC(field2)+" \u00B0C";
+				result.innerHTML = res;
+			}
 
             if(oper === 'CtoF'){
-                document.getElementById("result").value=CF(field2)+" \u00B0F";
-            }
+                var res = document.getElementById("result").value=CF(field2)+" \u00B0F";
+				result.innerHTML = res;
+			}
 
             if(oper === 'FtoC'){
-                document.getElementById("result").value=FC(field2)+" \u00B0C";
-            }
+                var res = document.getElementById("result").value=FC(field2)+" \u00B0C";
+				result.innerHTML = res;
+			}
 
     }
 	</script>

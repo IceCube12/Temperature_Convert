@@ -11,11 +11,11 @@ body{
 h1{
     margin: 1em auto;
     text-align: center;
-    color: #9c6644;
+    color: #f5f6f7;
 }
 
 fieldset{
-    background-color:#9c6644;
+    background-color:#9c6644;   
     border: none;
     border-radius: 20px;
     padding: 2rem 0;

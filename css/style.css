@@ -32,6 +32,12 @@ div {
     display:block;
   }
 
+@media screen and (min-width: 360px) {
+    .mc {
+      width: 100%;
+    }
+}
+
 label {
     display: block;
     margin: 0.5rem 0;

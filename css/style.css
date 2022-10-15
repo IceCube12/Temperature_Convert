@@ -14,6 +14,15 @@ h1{
     color: #f5f6f7;
 }
 
+.rslt_h{
+    margin: 0;
+}
+
+.txt{
+    margin-top: 0;
+    margin-bottom: 1vh;
+}
+
 fieldset{
     background-color:#9c6644;   
     border: none;
@@ -28,7 +37,6 @@ div {
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
-    padding-bottom: 2em;
     display:block;
   }
 
@@ -36,6 +44,10 @@ div {
     .mc {
       width: 100%;
     }
+}
+
+.dv{
+    margin-left: 0;
 }
 
 label {
@@ -67,4 +79,17 @@ button[type="submit"]{
     height: 2em;
     font-size: 1.1rem;
     background-color: #b07d62;
+}
+
+.tmp_btn{
+    background-color: #b07d62;
+    border: none;
+    border-radius: 10px;
+    color: #f5f6f7;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hvr:hover{
+    background-color: #7f5539;
 }

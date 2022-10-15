@@ -9,24 +9,32 @@
 <body>
 	<h1>Temperature Convertion</h1>
 	<div class="mc" id="convertion">
-		<fieldset> 
+		<fieldset>
+			<h1 class="rslt_h" id="converting">Celsius to Kelvin</h1>
 			<label id="temperature">Enter Temperature
 				<input type="text" id="celc" name="type" placeholder="Enter Number">
 			</label>
 
-			<label id="dropdown">Select Convertion:
+			<!-- <label id="dropdown">
 				<select id="toConvert">
 					<option value="CtoK">C to K</option>
 			 		<option value="KtoC">K to C</option>
 					<option value="CtoF">C to F</option>
 					<option value="FtoC">F to C</option>
 				</select>
-			</label>
+			</label> -->
+			<div class="dv">Select Convertion:
+				<button class="tmp_btn hvr" onclick="tocnvrt('CtoK')">CtoK</button>
+				<button class="tmp_btn hvr" onclick="tocnvrt('KtoC')">KtoC</button>
+				<button class="tmp_btn hvr" onclick="tocnvrt('CtoF')">CtoF</button>
+				<button class="tmp_btn hvr" onclick="tocnvrt('FtoC')">FtoC</button>
+			</div>
 
 
-			<label id="rslt">Result:
+			<label id="rslt">
 				<!-- <input type="text" id="result"> -->
-				<h1 id="result">RESULT HERE!!</h1>
+				<!-- <p class="txt">Result:</p> -->
+				<h1 class="rslt_h" id="result">RESULT HERE!!</h1>
 			</label>
 
 			<label id="btns">

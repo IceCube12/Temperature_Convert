@@ -1,3 +1,26 @@
+var oper = "CtoK";
+
+function tocnvrt(val){
+	oper = val;
+	if(oper === 'CtoK'){
+		var res = "Celsius to Kelvin";
+		converting.innerHTML = res;
+	}
+	if( oper == 'KtoC'){
+		var res = "Kelvin to Celsius";
+		converting.innerHTML = res;
+	}
+	if(oper === 'CtoF'){
+		var res = "Celsius to Fahrenheit";
+		converting.innerHTML = res;
+	}
+	if( oper == 'FtoC'){
+		var res = "Fahrenheit to Celsius";
+		converting.innerHTML = res;
+	}	
+}
+
+// Converting Formulas 
 function CK(x){
 	return (273.15)+(x);
 }
@@ -17,7 +40,7 @@ function FC(x){
 function fnl(){
 var field1 = document.getElementById("celc").value;
 var field2 = parseFloat(field1);
-var oper = document.getElementById("toConvert").value;
+// var oper = document.getElementById("toConvert").value;
 
 	if(oper === 'CtoK'){
 		var res = document.getElementById("result").value=CK(field2)+" \u00B0K";
